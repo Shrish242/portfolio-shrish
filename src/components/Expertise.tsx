@@ -1,44 +1,51 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faDocker, faPython} from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import { faCloud, faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
+     "MySQL",
     "PostgreSQL",
-    "Postman"
+    "SQLite",
+    "Azure SQL",
+    "MongoDB",
+    "Redis",
+    "SQLAlchemy",
+    "Stored Procedures",
+    "Database Normalization",
+    "Transaction Management",
+    "Query Optimization"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+     "React",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Flask",
+    "Express.js",
+    "Node.js",
+    "Python",
+    "REST APIs",
+    "JWT Auth"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+   "Microsoft Azure",
+    "Azure SQL",
+    "Cloud Deployment",
+    "App Services",
+    "Azure Portal",
+    "Resource Groups",
+    "Cloud Databases",
+    "DevOps Pipelines",
+    "CI/CD Integration",
+    "Virtual Machines",
+    "Storage Accounts"
 ];
 
 function Expertise() {
@@ -48,9 +55,9 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
+                    <h3>Database Engineering & Architecture</h3>
+                    <p>I specialize in designing, building, and managing robust database systems that power real-time applications. From schema design to transaction management and performance tuning, I have hands-on experience handling both relational and distributed databases.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +67,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Full Stack Web Development</h3>
+                    <p>I build end-to-end applications with intuitive frontends and secure, scalable backends. My work includes a full-stack banking system, a productivity monitoring desktop app, and several Flask + React projects.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +79,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faCloud} size="3x"/>
+                    <h3>Cloud Integration & Azure Services</h3>
+                    <p>Experienced in deploying and managing cloud applications using Microsoft Azure. I’ve worked with Azure SQL, App Services, Resource Groups, and CI/CD pipelines to ensure scalable and efficient deployments. Comfortable with the Azure Portal, VMs, and cloud storage for real-world application needs.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
