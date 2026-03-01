@@ -5,14 +5,22 @@ import '../assets/styles/Footer.scss'
 
 function Footer() {
   return (
-    <footer>
-      <div>
-        <a href="https://github.com/Shrish242" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/shrishdhakal/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+    <footer className="footer-section">
+      <div className="container">
+        <div className="footer-content">
+          <div className="social-links">
+            <a href="https://github.com/Shrish242" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <GitHubIcon />
+            </a>
+            <a href="https://www.linkedin.com/in/shrishdhakal/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <LinkedInIcon />
+            </a>
+          </div>
+          <p className="copyright">
+            © {new Date().getFullYear()} Shrish Dhakal. All rights reserved.
+          </p>
+        </div>
       </div>
-       <p>
-       © 2025 Shrish Dhakal. All rights reserved for modifications and custom content.
-      </p>
     </footer>
   );
 }
