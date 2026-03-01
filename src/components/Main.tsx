@@ -37,7 +37,7 @@ function Main() {
             </h1>
 
             <h2 className="hero-subtitle flex-align-center">
-              Software Engineer & Digital Craftsman <AutoAwesomeIcon className="magic-icon" />
+              Software Engineer & Database Engineer
             </h2>
 
             <p className="hero-bio">
