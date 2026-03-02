@@ -1,7 +1,6 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Tilt from 'react-parallax-tilt';
 import Profile from '../assets/images/Profile.jpg';
 import '../assets/styles/Main.scss';
