@@ -116,13 +116,12 @@ function Navigation({ parentToChild, modeChange }: any) {
                   fontSize: '1.5rem',
                   margin: 0,
                   cursor: 'pointer',
-                  background: 'var(--accent-gradient)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
+                  letterSpacing: '0.05em',
+                  fontWeight: 700
                 }}
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
-                SD
+                <span style={{ color: '#0EA5E9' }}>S</span><span style={{ color: '#F97316' }}>D</span>
               </h1>
             </Box>
 

@@ -58,10 +58,9 @@
             color: var(--text-primary);
 
             .text-accent {
-                background: var(--accent-gradient);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                color: #0891B2;
+                -webkit-text-fill-color: #0891B2;
+                text-shadow: 0 0 40px rgba(8, 145, 178, 0.25);
             }
         }
 
